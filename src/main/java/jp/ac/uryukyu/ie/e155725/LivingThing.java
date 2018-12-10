@@ -1,10 +1,20 @@
 package jp.ac.uryukyu.ie.e155725;
 
+/**
+ * EnemyとHeroの共通部分解消のためのクラス
+ */
 public class LivingThing {
     private String name;
     private int hitPoint;
     private int attack;
     private boolean dead;
+
+    /**
+     *
+     * @param name 動作の主体
+     * @param maximumHP 体力
+     * @param attack 攻撃力の上限
+     */
     public LivingThing(String name, int maximumHP, int attack){
         this.name = name;
         hitPoint = maximumHP;
